@@ -1,0 +1,17 @@
+.quadrado{
+	background: green;
+	height: 200px;
+	width: 200px;
+}
+
+.absoluto{
+	position: relative;
+	top: 0px;
+	right: -400px;
+	background-color: red;
+	
+}
+
+.relativo{
+	position: relative;
+}

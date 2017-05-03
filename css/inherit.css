@@ -1,0 +1,11 @@
+div{
+	border: 2px solid;
+	border-color: red;
+	width: 300px;
+	height: 300px;
+}
+
+img{
+	height: inherit;
+	width: inherit;
+}

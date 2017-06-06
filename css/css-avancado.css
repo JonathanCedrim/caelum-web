@@ -1,0 +1,118 @@
+h1{
+	color: blue;
+}
+
+li{
+	display: inline;
+}
+
+p
+{
+	color: grey;
+}
+
+a:before{
+	content: '[';
+}
+
+a:after {
+	content: ']';
+}
+
+/*verifica se link e externo*/
+a[href^=http://]:after {
+	content: '(externo)';	
+	color: red;
+}
+
+a[href^=http://]:visited {
+	color: red;
+}
+
+a:link{
+	color: pink;
+}
+
+a:active{
+	color: white;
+}
+a:hover {
+	color: black;
+}
+
+a:visited {
+	color: 	
+}
+
+article p {
+	color:red;
+}
+
+h2 ~ p {
+	font-style: italic;
+}
+
+h2 + p {
+	font-variant: small-caps;
+}
+
+article h1{
+	color: red;
+}
+
+article > h1{
+	color: blue;
+}
+
+p.especial {
+	color: black;
+}
+
+p:not(.especial){
+	color: green;
+}
+
+li:first-child {
+	color:red;
+}
+
+li:last-child{
+	color: blue;
+}
+
+/*p:nth-child(2) 2 em 2*/
+
+/*impar*/
+p:nth-child(2n){
+	color: red;
+}
+
+p:first-letter{
+	color: black;
+}
+
+/* texto grande
+p:first-line {
+	font-style: italic;
+	color: red;
+}*/
+
+#teste{
+	height: 100px;
+	width: 100px;
+	background-color: black;
+	position: relative;
+	top: 0px;
+	left: 500px;
+	transition: top 2s ease-in, background-color 5s;
+	
+
+}
+
+#teste:hover{
+	top: 300px;
+	background-color: red;
+	transition: all 2s ease;
+/*	transition: top 2s ease-in-out, background-color 5s ease;*/
+}
+

@@ -2,14 +2,16 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
-	<link rel="stylesheet" type="text/css" href="../css/style-1.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-2.css">
+	<link rel="stylesheet" href="../css/mobile.css" media="(max-width: 900px)">
 	<title>Mirror Fashion</title>
 </head>
-<body>
+<body id="e">
 	<!--cabeçalho-->
 	<header class="container">
-		<h1><img src="../img/logo.png" alt="Mirror Fashio"n></h1>
+		<h1><img src="../img/logo.png" alt="Mirror Fashion"></h1>
 
 		<p class="sacola">
 			Nenhum item na sacola de compras
@@ -20,7 +22,7 @@
 				<li><a href="#">Sua Conta</a></li>
 				<li><a href="#">Lista de Desejos</a></li>
 				<li><a href="#">Cartao Fidelidade</a></li>
-				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="../php/sobre.php">Sobre</a></li>
 				<li><a href="#">Ajuda</a></li>
 			</ul>
 		</nav>
@@ -29,22 +31,31 @@
 	<!--conteudo principal -->
 	<div class="container destaque">
 		<!--busca-->
-			<section class="busca">
-				<h2>Busca</h2>
+		<section class="busca">
+			<h2>Busca</h2>
 			<form>
 				<input type="search">
-				<input type="image" src="../img/busca.png" class="lupa">
+				<input type="image" src="../img/busca.png" class="lupa" alt="busca">
 			</form>
-			</section><!--fim de busca-->
+		</section><!--fim de busca-->
 
-		
+	<!--imagem central que aparece sobre evento*/-->
+	<div class="central">
+	</div>		
 
 		<!-- menu de departamentos -->
-		<section class="menu-departamentos">
-			<nav>
+			<nav class="menu-departamentos">
 				<ul>
 					<li><a href="#">departamentos</a></li>
-					<li><a href="#">blusas e camisas</a></li>
+					<li>
+						<h3><a href="#">blusas e camisas</a></h3>
+							<ul>
+								<li><a href="#">manga curta</a></li>
+								<li><a href="#">manga cumprida</a></li>
+								<li><a href="#">camisa social</a></li>
+								<li><a href="#">camisa casual</a></li>
+							</ul>
+					</li>
 					<li><a href="#">calças</a></li>
 					<li><a href="#">saias</a></li>
 					<li><a href="#">vestidos</a></li>
@@ -52,10 +63,9 @@
 					<li><a href="#">bolsas e carteiras</a></li>
 					<li><a href="#">acessórios</a></li>
 				</ul>
-			</nav>
-		</section><!--fim-->
+			</nav><!--fim-->
 		
-		<img src="../img/destaque-home.png" alt="Promoção: Big City Nights">
+		<img src="../img/destaque-home.png" alt="Promoção: Big City Nights"/>
 	</div>
 
 	<div class="container painel">
@@ -66,7 +76,7 @@
 				<li>
 					<a href="produto.html">
 						<figure>
-							<img src="../img/produtos/miniatura1.png">
+							<img src="../img/produtos/miniatura1.png"/>
 							<figcaption>Fuzz Cardigan por R$ 129,90
 							</figcaption>
 						</figure>
@@ -75,7 +85,7 @@
 				<li>
 					<a href="produto.html">
 						<figure>
-							<img src="../img/produtos/miniatura2.png">
+							<img src="../img/produtos/miniatura2.png"/>
 							<figcaption>Fuzz Cardigan por R$ 129,90
 							</figcaption>
 						</figure>
@@ -84,7 +94,7 @@
 				<li>
 					<a href="produto.html">
 						<figure>
-							<img src="../img/produtos/miniatura4.png">
+							<img src="../img/produtos/miniatura4.png"/>
 							<figcaption>Fuzz Cardigan por R$ 129,90
 							</figcaption>
 						</figure>
@@ -93,7 +103,7 @@
 				<li>
 					<a href="produto.html">
 						<figure>
-							<img src="../img/produtos/miniatura5.png">
+							<img src="../img/produtos/miniatura5.png"/>
 							<figcaption>Fuzz Cardigan por R$ 129,90
 							</figcaption>
 						</figure>
@@ -102,7 +112,7 @@
 				<li>
 					<a href="produto.html">
 						<figure>
-							<img src="../img/produtos/miniatura8.png">
+							<img src="../img/produtos/miniatura8.png"/>
 							<figcaption>Fuzz Cardigan por R$ 129,90
 							</figcaption>
 						</figure>
@@ -111,7 +121,7 @@
 				<li>
 					<a href="produto.html">
 						<figure>
-							<img src="../img/produtos/miniatura9.png">
+							<img src="../img/produtos/miniatura9.png"/>
 							<figcaption>Fuzz Cardigan por R$ 129,90
 							</figcaption>
 						</figure>
@@ -127,7 +137,7 @@
 				<li>
 					<a href="produto.html">
 						<figure>
-							<img src="../img/produtos/miniatura1.png">
+							<img src="../img/produtos/miniatura1.png"/>
 							<figcaption>Fuzz Cardigan por R$ 129,90
 							</figcaption>
 						</figure>
@@ -136,7 +146,7 @@
 				<li>
 					<a href="produto.html">
 						<figure>
-							<img src="../img/produtos/miniatura2.png">
+							<img src="../img/produtos/miniatura2.png"/>
 							<figcaption>Fuzz Cardigan por R$ 129,90
 							</figcaption>
 						</figure>
@@ -145,7 +155,7 @@
 				<li>
 					<a href="produto.html">
 						<figure>
-							<img src="../img/produtos/miniatura4.png">
+							<img src="../img/produtos/miniatura4.png"/>
 							<figcaption>Fuzz Cardigan por R$ 129,90
 							</figcaption>
 						</figure>
@@ -154,7 +164,7 @@
 				<li>
 					<a href="produto.html">
 						<figure>
-							<img src="../img/produtos/miniatura5.png">
+							<img src="../img/produtos/miniatura5.png"/>
 							<figcaption>Fuzz Cardigan por R$ 129,90
 							</figcaption>
 						</figure>
@@ -163,7 +173,7 @@
 				<li>
 					<a href="produto.html">
 						<figure>
-							<img src="../img/produtos/miniatura8.png">
+							<img src="../img/produtos/miniatura8.png"/>
 							<figcaption>Fuzz Cardigan por R$ 129,90
 							</figcaption>
 						</figure>
@@ -172,7 +182,7 @@
 				<li>
 					<a href="produto.html">
 						<figure>
-							<img src="../img/produtos/miniatura9.png">
+							<img src="../img/produtos/miniatura9.png"/>
 							<figcaption>Fuzz Cardigan por R$ 129,90
 							</figcaption>
 						</figure>
@@ -185,7 +195,7 @@
 	<!--rodape-->
 	<footer>
 		<div class="container">
-			<img src="../img/logo-rodape.png" alt="Logo Mirror Fashion">
+			<img src="../img/logo-rodape.png" alt="Logo Mirror Fashion"/>
 
 			<ul class="social">
 				<li><a href="facebook.com/mirrorfashion">FaceBook</a></li>

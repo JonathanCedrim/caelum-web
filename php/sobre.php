@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="../css/style-1.css"/>
-<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-1.css">
+	<link rel="stylesheet" type="text/css" href="../css/mobile.css" media="(max-width:934px)">
 <title>Mirror Fashion</title>
 </head>
 <body>
 
-<ul>
-	<li><a href="#">Historia</a></li>
-	<li><a href="diferenciais.html">Diferenciais</a></li>
-</ul>
-<h1>Mirror Fashion.</h1>
+<?php include("cabecalho.php"); ?>
 	
 	<p>A <strong>Mirror Fashion</strong> é a maior empresa comércio eletrônico no segmento de moda em todo o mundo. 
 	Fundada em 1932, possui filiais em 124 países, sendo líder de mercado com mais de 90% de 
@@ -34,7 +32,8 @@
 		<img src="../img/familia-pelho.jpg" alt="foto da familia pelho">
 		<figcaption>Foto da familia pelho</figcaption>
 	</figure>
-	<p>A fundação em 1932 ocorreu no momento da descoberta econônica do interior do Paraná. A 
+
+	<p>A fundação em 1932 (há <?php print date("Y") - 1932?> anos) ocorreu no momento da descoberta econônica do interior do Paraná. A 
 	família Pelho, tradicional da região, investiu todas as suas economias nessa nova iniciativa, 
 	revolucionária para a época. O fundador Eduardo Simões Pelho, dotado de particular visão 
 	administrativa, guiou os negócios da empresa durante mais de 50 anos, muitos deles ao lado 
@@ -54,11 +53,6 @@
 	Fashion, além de presidentes da União Européia, Ásia e o secretário-geral da ONU.</p>
 
 
-
-	<p>Visite nosso site: <a href="http://caelum.com.br">Caelum</a></p>
-	<div id="rodape">
-		<img src="../img/logo-rodape.png" alt="logo"/>
-		<strong>&copy; Copyright Mirror Fashion</strong>
-	</div>
+	<?php include ("rodape.php"); ?>
 </body>
 </html>

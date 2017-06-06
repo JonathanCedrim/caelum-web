@@ -1,53 +1,254 @@
+/*
+html {
+  transform: rotate(-30deg) scale(0.8);
+}
+*/
+
 body{
-	margin: 0 auto;
+	color: #333;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-ul:first-of-type{
+header{
+	position: relative;
+}
+
+footer{
+	background-image: url(../img/fundo-rodape.png);
+	clear: both;
+	padding: 20px 0;
+}
+
+.logotipo{
+	position: relative;
+	top: 20px;
+	left: 50px;
+}
+
+.menu-opcoes{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.menu-opcoes ul li{
+	display: inline;
+	margin-left: 20px;
+}
+
+.menu-opcoes ul{
+	font-size: 15px;
 	list-style-type: none;
-	padding-left: 0;
-	padding-bottom: 1px;	
 }
 
-li{
-
+.menu-opcoes a{
+	color: #003366;
+	text-decoration: none;
 }
 
-h1{
+/*conceito importante, clear*/
+.menu-departamentos{
+	clear: left;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+.busca{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.sacola{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(../img/sacola.png) no-repeat top right;
+	font-size: 14px;
+	padding-top: 8px;
+	padding-right: 35px;
+	text-align: right;
+	width: 140px;
+}
+
+.destaque{
+	margin-top: 10px;
+}
+
+.painel{
+	margin: 10px 0;
 	padding: 10px;
+	width: 445px;
+	border-radius: 4px;
+	
 }
 
-h2{
-
-}
-
-p{
-	padding: 0 45px;
-	text-indent: 15px;
-}
-
-figure{
-	padding: 15px;
-	margin: 30px;
-}
-
-figcaption{
-		margin-top: 10px;
-}
-
-#nav li{
+.novidades{
 	float: left;
+	background-color: #f5dcdc;
+	background: linear-gradient(#f5dcdc, #bebef4);
+}
+
+.mais-vendidos{
+	float: right;
+	background: linear-gradient(#dcdcf5, #f4bebe);
+}
+
+/*centralizar*/
+.container{
+	margin: 0 auto;
+	width: 940px;	
+	/*margin-right: auto;
+	margin-left: auto;*/	
+}
+
+.busca, .menu-departamentos{
+	float: left;
+	background-color: #dcdcdc;
+	font-weight: bold;
+	text-decoration: none;
+
+	margin-right: 10px
+	width: 230px;
+}
+
+.menu-departamentos li{
+	background-color: white;
+	margin-bottom: 1px;
+	padding: 5px 10px;
+}
+
+.menu-departamentos a{
+	color: #333333;
+	text-decoration: none;
+}
+
+.social{
+	position: absolute;
+	top: 12px;
+	right: 0;
+}
+
+footer .container{
+	position: relative;
+}
+
+.painel li{
+	display: inline-block;
+	vertical-align: top;
+	width: 140px;
+	margin: 2px;
+	padding-bottom: 10px;
+}
+
+.painel h2{
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+	box-shadow: inset 1px 1px 4px #999;
+}
+
+.painel a{
+	color: #333;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.social a{
+	height: 32px;
+	width: 32px;
+	display: block;
+	text-indent: -9999px;
+}
+
+.social li{
+	float: left;
+	margin-left: 25px;
+}
+
+.busca h2, .busca form, .menu-departamentos h2{
+	margin: 10px;		
+}
+
+.busca input[type=search]{
+	width: 170px;
+}
+
+input[type=search]{
+	border-radius: 10px;
+}
+
+.social a[href*="facebook.com"]{
+	background-image: url(../img/facebook.png);
+}
+
+.social a[href*="twitter.com"]{
+	background-image: url(../img/twitter.png);	
+}
+.social a[href*="google.com"]{	
+	background-image: url(../img/googleplus.png);	
+}
+
+.menu-opcoes a:hover{
+	color: #007dc6;
+}
+
+.menu-opcoes a:active{
+	color: #867dc6;
+}
+
+.menu-departamentos li ul{
+	display: none;
+}
+
+.painel li:nth-child(n):hover{
+	background-color: rgba(255, 255, 255, 0.7);
+	box-shadow: 0 0 5px #333;
+	transform: rotate(-5deg) scale(2);
+	transition: 0.7s;
+}
+
+.painel li:nth-child(2n):hover{
+	background-color: rgba(255, 255, 255, 0.7);
+	box-shadow: 0 0 5px #333;
+	transform: rotate(8deg) scale(2) translateX(100px) translateY(-50px);
+	transition: 0.5s;
+}
+
+/*cubic-bezier so altera a velocidade, nada mais, assim como os demais cubic-bezier(0,1.07,1,.19)*/
+.painel li{
+	transition: 0.7s linear;
+}
+
+.menu-departamentos li:hover ul{
+	display: block;
+}
+
+.menu-departamentos ul ul li{
+	background-color: #dcdcdc;
+}
+
+.menu-departamentos li li a:before{
+	content: '\272A';
 	padding-right: 5px;
 }
 
-#rodape{
-	color: #777;
-	background: black;
-	margin: 30px 0;
-	padding: 30px 0;
+.painel h2:before{
+	content: '\2756';
+	padding-right: 5px;
+	opacity: 0.4;
 }
 
-#rodape img{
-	margin-right: 30px;
-	vertical-align: middle;
-	width: 94px;
+.central{
+	position: fixed;	
+	left: 40%;
+	height: 400px;
+	width: 300px;
+	background-color: black;
+	opacity: 0;
 }

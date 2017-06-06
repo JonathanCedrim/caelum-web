@@ -1,190 +1,73 @@
 body{
 	color: #333;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+ 	font-family: "Arial", "Helvetica", sans-serif;	
 }
 
-header{
-	position: relative;
-}
-
-footer{
-	background-image: url(../img/fundo-rodape.png);
-	clear: both;
-	padding: 20px 0;
-}
-
-.logotipo{
-	position: relative;
-	top: 20px;
-	left: 50px;
-}
-
-.menu-opcoes{
-	position: absolute;
-	bottom: 0;
-	right: 0;
-}
-
-.menu-opcoes ul li{
+li{
 	display: inline;
-	margin-left: 20px;
 }
 
-.menu-opcoes ul{
-	font-size: 15px;
-	list-style-type: none;
+h1{
+	font-size: 30px;
+	font-family: serif;
+	background-image: url(../img/sobre-background.jpg);
 }
 
-.menu-opcoes a{
-	color: #003366;
-	text-decoration: none;
+h2{
+	flex-flow: sans-serif;
+	border-bottom: 2px solid #333;
 }
 
-/*conceito importante, clear*/
-.menu-departamentos{
-	clear: left;
-	text-transform: uppercase;
-	text-decoration: none;
-	margin-top: 10px;
-	padding-bottom: 10px;
+p{
+	font-family: monospace;
+	text-indent: 30px;
 }
 
-.sacola{
-	position: absolute;
-	top: 0;
-	right: 0;
-	background: url(../img/sacola.png) no-repeat top right;
-	font-size: 14px;
-	padding-top: 8px;
-	padding-right: 35px;
-	text-align: right;
-	width: 140px;
+div{
+	border-radius: 5px;
 }
 
-.destaque{
-	margin-top: 10px;
+h1 + p{
+	text-indent: 0;
 }
 
-.painel{
-	margin: 10px 0;
-	padding: 10px;
-	width: 445px;
+#cabecalho{
+	color: white;
+	text-align: center;
 }
 
-.novidades{
-	float: left;
+#centro-distribuicao{
+	margin-left: auto;
+	margin-right: auto;
+	width: 550px;
 }
 
-.mais-vendidos{
-	float: right;
+#centro-distribuicao figcaption{
+	background-color: #3cba54;	
 }
 
-/*centralizar*/
-.container{
-	margin: 0 auto;
-	width: 940px;
-	/*margin-right: auto;
-	margin-left: auto;*/	
+#rodape{
+	clear: both;
+	margin: 30px 0;
+	padding: 20px 0;	
 }
 
-.busca, .menu-departamentos{
-	float: left;
-	background-color: #dcdcdc;
-	font-weight: bold;
-	text-decoration: none;
-
-	margin-right: 10px
-	width: 230px;
-}
-
-.menu-departamentos li{
-	background-color: white;
-	margin-bottom: 1px;
-	padding: 5px 10px;
-}
-
-.menu-departamentos a{
-	color: #333333;
-	text-decoration: none;
-}
-
-.novidades{
-	background-color: #f5dcdc;
-}
-
-.mais-vendidos{
-	background-color: #dcdcf5;
-}
-
-.social{
-	position: absolute;
-	top: 12px;
-	right: 0;
-}
-
-footer .container{
-	position: relative;
-}
-
-.busca input{
+#rodape img{
+	margin-right: 30px;
 	vertical-align: middle;
+	width: 94px;
 }
 
-.painel li{
-	display: inline-block;
-	vertical-align: top;
-	width: 140px;
-	margin: 2px;
-	padding-bottom: 10px;
+#familia-pelho{
+	float: right;
+	margin: 0 0 10px 10px;
 }
 
-.painel h2{
-	text-align: center;
-	font-size: 24px;
+p:first-letter{
 	font-weight: bold;
-	text-transform: uppercase;
-
-	margin-bottom: 10px;
 }
 
-.painel a{
-	color: #333;
-	font-size: 14px;
-	text-align: center;
-	text-decoration: none;
+:not(p) + p:first-line{
+	font-variant: small-caps;
 }
 
-.social a{
-	height: 32px;
-	width: 32px;
-	display: block;
-	text-indent: -9999px;
-}
-
-.social li{
-	float: left;
-	margin-left: 25px;
-}
-
-.busca h2, .busca form, .menu-departamentos h2{
-	margin: 10px;		
-}
-
-.busca input[type=search]{
-	width: 170px;
-}
-
-input[type=search]{
-	border-radius: 10px;
-}
-
-.social a[href*="facebook.com"]{
-	background-image: url(../img/facebook.png);
-}
-
-.social a[href*="twitter.com"]{
-	background-image: url(../img/twitter.png);	
-}
-.social a[href*="google.com"]{	
-	background-image: url(../img/googleplus.png);	
-}

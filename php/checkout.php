@@ -16,6 +16,8 @@
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script type="text/javascript" src="../js/converteMoeda.js"></script>
+    <script type="text/javascript" src="../js/testaConversao.js"></script>
+    <script type="text/javascript" src="../js/total.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/style-3-bootstrap.css">
 	<meta name="viewport" content="width=device-width">
 </head>
@@ -57,7 +59,7 @@
                             	<dd><?= $_POST['nome'] ?></dd>
 
                         		<dt>Preço</dt>
-                        		<dd><?= $_POST['preco'] ?></dd>
+                        		<dd id="preco"><?= $_POST['preco'] ?></dd>
 
                             	<dt>Cor</dt>
                             	<dd><?= $_POST['cor'] ?></dd>
@@ -65,6 +67,19 @@
                             	<dt>Tamanho</dt>
                             	<dd><?=  $_POST['tamanho']?></dd>
                             </dl>
+
+                            <div class="form-group">
+                                <label for="qt">Quantidade</label>
+                                <input id="qt" class="form-control" type="number" min="0" max="99"
+                                 value="1">
+                            </div>
+                     
+                            <div class="form-group">
+                                <label for="total">Total</label>
+                                <output for="qt valor" id="total" class="form-control">
+                                  <?= $_POST["preco"] ?>
+                                </output>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -111,7 +126,7 @@
 
                             <div class="form-group">
                                 <label for="bandeira-cartao">Bandeira</label>
-                                <select name="bandeira-cartao" id="bandeira-cartao" class="     form-control">
+                                <select name="bandeira-cartao" id="bandeira-cartao" class="form-control">
                                     <option value="master">MasterCard</option>
                                     <option value="visa">VISA</option>
                                     <option value="amex">American Express</option>

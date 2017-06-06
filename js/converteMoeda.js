@@ -1,15 +1,9 @@
-var numero = 9.9;
-var formatado = "R$ " + numero.toFixed(2).replace("." , ",");
 
-console.log(formatado);
 
-var texto = "R$ 120,35";
+function formatoMoedaReal(moeda) {
+	return "R$ " + moeda.toFixed(2).replace("." , ",");
+}
 
-var soNumero = texto.replace("R$ ", "");
-var soNumero = soNumero.replace("," , ".");
-
-var valor = parseFloat(texto.replace("R$ " , ""));
-
-var valor = parseFloat(soNumero);
-
-console.log(valor);
+function formatoMoedaRealFloat(moeda) {
+	return parseFloat(moeda.replace("R$ " , "").replace("," , "."));
+}
